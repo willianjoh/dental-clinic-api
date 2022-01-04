@@ -1,2 +1,2 @@
-# dental-mais
+# Dental+
 Gerenciador de Clinicas Odontológicas
