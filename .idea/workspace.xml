@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Projeto Inicial." />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Projeto Inicial.">
+      <change beforePath="$PROJECT_DIR$/client-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +98,7 @@
       <updated>1641338350923</updated>
       <workItem from="1641338368720" duration="1545000" />
       <workItem from="1641340497279" duration="129000" />
-      <workItem from="1641340711563" duration="297000" />
+      <workItem from="1641340711563" duration="1087000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641339363272</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Projeto Inicial.">
+      <created>1641341150077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641341150077</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
