@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="template basico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-web/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +53,15 @@
     </option>
   </component>
   <component name="ProjectId" id="23FmjWoqjOGRaPhTcDL2ORHZ2cE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -99,7 +94,7 @@
       <workItem from="1641338368720" duration="1545000" />
       <workItem from="1641340497279" duration="129000" />
       <workItem from="1641340711563" duration="3549000" />
-      <workItem from="1641415915693" duration="1345000" />
+      <workItem from="1641415915693" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -129,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641343968345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="template basico">
+      <created>1641423684090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641423684090</updated>
+    </task>
+    <task id="LOCAL-00006" summary="template basico">
+      <created>1641426610042</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641426610042</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +156,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Projeto Inicial." />
     <MESSAGE value="update" />
     <MESSAGE value="template basico" />
