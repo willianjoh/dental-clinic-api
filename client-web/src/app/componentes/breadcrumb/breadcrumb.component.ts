@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { BreadcrumbItem } from 'src/app/models/common/breadcrumb-item.interface';
 
 @Component({
   selector: 'breadcrumb',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
 
+  @Input() breadcrumbs: BreadcrumbItem[] = []
+  hasHomeRoute!: false;
+
   constructor() { }
 
   ngOnInit() {
+    if(!this.breadcrumbs){
+        throw new Error('Input  "breadcrumb"  must be informed');
+    }
   }
 
 }

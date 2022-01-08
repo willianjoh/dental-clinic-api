@@ -71,6 +71,11 @@ body {
   text-align: left;
   background-color: #fff;
 }
+.h1-title{
+  font-size: 2.2rem;
+  font-family: cursive;
+  text-align: center;
+}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -10131,7 +10136,7 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 .sb-topnav.navbar-light #sidebarToggle {
-  color: #212529;
+  color: #343a40;
 }
 
 .sb-sidenav {
@@ -10239,3 +10244,6 @@ body {
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

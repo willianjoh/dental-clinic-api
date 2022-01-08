@@ -1,26 +1,82 @@
-<breadcrumb></breadcrumb>
-<form [formGroup]="formulario">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="col-6 mb-2">
-        <div class="form-group">
-          <input type="text" class="form-control" formControlName="nome" name="nome" id="nome" placeholder="Nome">
-        </div>
+<section class="component-body">
+  <div class="component-wrapper cmpt-wrp">
+    <h1 class="h1-title pt-5">{{'Cadastrar Paciente'}}</h1>
+    <div class="component-content cmpt-ctn pt-3">
+      <div>
+        <tabset class="justify-content-center">
+          <tab heading="Dados Pessoais" id="tab1">
+            <ng-container *ngTemplateOutlet="dadosPessoais"></ng-container>
+          </tab>
+          <tab heading="Endereço">Endereço</tab>
+          <tab heading="Informações Adicionais">Informações Adicionais</tab>
+        </tabset>
       </div>
-      <div class="col-6">
-        <div class="form-group">
-          <input type="text" class="form-control" name="email" id="email" formControlName="email" placeholder="Email">
-        </div>
-      </div>
+      <ng-template #dadosPessoais>
+        <form [formGroup]="formulario" class="width-full">
+          <fieldset class="row mx-0 mb-3 mt-4">
+            <div class="col-md-4 col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control" formControlName="nome" name="nome" id="nome"
+                  placeholder="Nome completo:">
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <div class="form-group">
+                <input type="text" class="form-control" name="cpf" id="cpf" formControlName="cpf" placeholder="CPF:"
+                  mask="000.000.000-00">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <input type="text" class="form-control" name="rg" formControlName="rg" placeholder="RG:"
+                  mask="AA-00.000.000">
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3">
+              <input type="text" placeholder="Data de Nascimento:"
+                  class="form-control"
+                  bsDatepicker
+                  [bsConfig]="{ isAnimated: true }">
+            </div>
+            <div class="col-md-3 ">
+              <div class="form-group">
+                <input type="text" class="form-control" name="email" formControlName="email"
+                  placeholder="Email:">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <input type="text" class="form-control" name="contato" formControlName="contato"
+                  placeholder="Telefone:" mask="(00) 00000-0000">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <input type="text" class="form-control" name="contatoFixo" formControlName="contatoFixo"
+                  placeholder="Telefone Fixo:" mask="(00) 0000-0000">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group mb-3">
+                <select class="custom-select" formControlName="genero">
+                  <option value="0" selected></option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Feminino</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <div class="col-12 text-center align-text-bottom">
+            <button type="button" class="btn btn-primary mx-2">
+              Salvar
+            </button>
+            <button type="button" class="btn btn-secondary">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </ng-template>
+
     </div>
   </div>
-  <div class="row">
-    <button type="button" class="btn btn-primary">
-      Salvar
-    </button>
-      &nbsp;
-    <button type="button" class="btn btn-secondary">
-      Cancelar
-    </button>
-  </div>
-</form>
+</section>

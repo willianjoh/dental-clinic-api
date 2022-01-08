@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { BsLocaleService } from 'ngx-bootstrap/datepicker';
+import { BreadcrumbItem } from '../../../models/common/breadcrumb-item.interface';
 
 @Component({
   selector: 'app-paciente',
@@ -8,15 +10,29 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class PacienteComponent implements OnInit {
 
+  breadcrumb: BreadcrumbItem[] = [];
   formulario!: FormGroup;
+  active = 1;
 
-  constructor() {}
+  constructor(private bsLocaleService: BsLocaleService) {
+    this.breadcrumb = [
+      { title: 'Início', active: false },
+      { title: 'Pacientes', active: false },
+      { title: 'Cadastrar', active: true},
+    ]
+    this.bsLocaleService.use('pt-br');
+
+  }
 
   ngOnInit() {
     this.formulario = new FormGroup({
       nome: new FormControl(null, [Validators.required]),
-      sobrenome: new FormControl(null, [Validators.required]),
       email: new FormControl(null, [Validators.required]),
+      cpf: new FormControl(null, [Validators.required]),
+      rg: new FormControl(null),
+      contato: new FormControl(null, [Validators.required]),
+      contatoFixo: new FormControl(null),
+      genero: new FormControl(null, [Validators.required]),
       dataNascimento: new FormControl(null, [Validators.required])
     })
   }
