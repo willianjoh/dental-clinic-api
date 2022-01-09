@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="template basico" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="cadastro paciente">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +95,7 @@
       <workItem from="1641340711563" duration="3549000" />
       <workItem from="1641415915693" duration="3337000" />
       <workItem from="1641512276221" duration="1315000" />
+      <workItem from="1641684200450" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -157,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641523701488</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="cadastro paciente">
+      <created>1641684308550</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641684308550</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +189,7 @@
     <MESSAGE value="Projeto Inicial." />
     <MESSAGE value="update" />
     <MESSAGE value="template basico" />
-    <option name="LAST_COMMIT_MESSAGE" value="template basico" />
+    <MESSAGE value="cadastro paciente" />
+    <option name="LAST_COMMIT_MESSAGE" value="cadastro paciente" />
   </component>
 </project>

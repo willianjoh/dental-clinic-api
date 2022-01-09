@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './template/home/home.component';
 import { TemplateModule } from './template/template.module';
 import { PacienteModule } from './views/paciente/paciente.module';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from './shared/material/material.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import { PacienteModule } from './views/paciente/paciente.module';
     FormsModule,
     PacienteModule,
     TemplateModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [ {
     provide: LOCALE_ID,

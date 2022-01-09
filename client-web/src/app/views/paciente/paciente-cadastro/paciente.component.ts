@@ -12,13 +12,14 @@ export class PacienteComponent implements OnInit {
 
   breadcrumb: BreadcrumbItem[] = [];
   formulario!: FormGroup;
+  endereco!: FormGroup;
   active = 1;
 
   constructor(private bsLocaleService: BsLocaleService) {
     this.breadcrumb = [
       { title: 'Início', active: false },
       { title: 'Pacientes', active: false },
-      { title: 'Cadastrar', active: true},
+      { title: 'Cadastrar', active: true },
     ]
     this.bsLocaleService.use('pt-br');
 
@@ -33,8 +34,13 @@ export class PacienteComponent implements OnInit {
       contato: new FormControl(null, [Validators.required]),
       contatoFixo: new FormControl(null),
       genero: new FormControl(null, [Validators.required]),
-      dataNascimento: new FormControl(null, [Validators.required])
+      dataNascimento: new FormControl(null, [Validators.required]),
     })
+
+    this.endereco = new FormGroup({
+      cep: new FormControl(null, [Validators.required]),
+    })
+
   }
 
 }
