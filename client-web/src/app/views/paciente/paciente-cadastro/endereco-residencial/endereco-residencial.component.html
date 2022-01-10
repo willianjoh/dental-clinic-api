@@ -1,7 +1,18 @@
 <section class="component-body">
   <div class="component-wrapper cmpt-wrp">
     <form [formGroup]="formulario" class="width-full create-account-form">
-      <fieldset class="row mx-0 mb-3 mt-4">
+      <mat-grid-list cols="2">
+          <div class="example-container">
+            <mat-form-field appearance="outline" class="full-width-field" [style.fontSize.px]="13">
+              <mat-label [style.fontSize.px]="13">CEP: </mat-label>
+              <input matInput formControlName="rua" required mask="00000-000">
+              <mat-error *ngIf="formulario.controls['rua'].invalid">{{'rua obrigatoria'}}</mat-error>
+            </mat-form-field>
+
+          </div>
+      </mat-grid-list>
+
+      <!--<fieldset class="row mx-0 mb-3 mt-4">
         <div class="col-md-3 col-lg-4">
           <div class="form-group">
             <label for="nome" class="input-label">Cep:</label>
@@ -40,7 +51,7 @@
               placeholder="Complemento:">
           </div>
         </div>
-      </fieldset>
+      </fieldset>-->
       <div class="col-12 text-center align-text-bottom">
         <button type="button" class="btn btn-primary mx-2">
           Proximo

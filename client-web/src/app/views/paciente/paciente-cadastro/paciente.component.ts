@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BsLocaleService } from 'ngx-bootstrap/datepicker';
-import { BreadcrumbItem } from '../../../models/common/breadcrumb-item.interface';
+import { Generos } from 'src/app/models/common-models/generos.interface';
+import { CommonUtils } from '../../../util/common-utils';
 
 @Component({
   selector: 'app-paciente',
@@ -10,37 +11,72 @@ import { BreadcrumbItem } from '../../../models/common/breadcrumb-item.interface
 })
 export class PacienteComponent implements OnInit {
 
-  breadcrumb: BreadcrumbItem[] = [];
-  formulario!: FormGroup;
-  endereco!: FormGroup;
-  active = 1;
-
-  constructor(private bsLocaleService: BsLocaleService) {
-    this.breadcrumb = [
-      { title: 'Início', active: false },
-      { title: 'Pacientes', active: false },
-      { title: 'Cadastrar', active: true },
-    ]
+  dadosPessoaisForm!: FormGroup;
+  enderecoForm!: FormGroup;
+  informacoesForm!: FormGroup;
+  generos: Generos[] = [];
+  isValid!: boolean;
+  constructor(private bsLocaleService: BsLocaleService,
+    private formBuilder: FormBuilder) {
     this.bsLocaleService.use('pt-br');
 
   }
 
   ngOnInit() {
-    this.formulario = new FormGroup({
-      nome: new FormControl(null, [Validators.required]),
-      email: new FormControl(null, [Validators.required]),
-      cpf: new FormControl(null, [Validators.required]),
-      rg: new FormControl(null),
-      contato: new FormControl(null, [Validators.required]),
-      contatoFixo: new FormControl(null),
-      genero: new FormControl(null, [Validators.required]),
-      dataNascimento: new FormControl(null, [Validators.required]),
-    })
-
-    this.endereco = new FormGroup({
-      cep: new FormControl(null, [Validators.required]),
-    })
-
+    this.buildFormGroup();
+    this.getGeneros();
   }
 
+    buildFormGroup(){
+      this.dadosPessoaisForm = this.formBuilder.group({
+        nome: ['', Validators.required],
+        email: ['', Validators.required],
+        cpf: ['', Validators.required],
+        dataNascimento: ['', Validators.required],
+        contato: ['', Validators.required],
+        genero: ['', Validators.required],
+        rg: [''],
+        contatoFixo: [''],
+        maiorIdade: [''],
+      });
+
+      this.enderecoForm = this.formBuilder.group({
+        secondCtrl: ['', Validators.required],
+      });
+
+      this.informacoesForm = this.formBuilder.group({
+        info: [''],
+      });
+
+    }
+  getGeneros() {
+    this.generos = [
+      { value: 1, descricao: 'Masculino' },
+      { value: 2, descricao: 'Feminino' }
+    ];
+  }
+
+  isValidated(formulario: FormGroup, field: string) {
+    return formulario.get(field)?.invalid && (formulario.get(field)?.dirty || formulario.get(field)?.touched);
+  }
+
+  nextTabValidation(){
+     if(!this.dadosPessoaisForm.valid){
+       console.log(this.dadosPessoaisForm)
+       console.log("Status" + this.dadosPessoaisForm.status)
+
+       CommonUtils.validateAllFields(this.dadosPessoaisForm);
+       this.isValid = false;
+      } else {
+        this.isValid = !this.isValid;
+        console.log(this.dadosPessoaisForm)
+        console.log("Status" + this.dadosPessoaisForm.status)
+      }
+  }
+
+  salvar(){
+    if(!this.dadosPessoaisForm.valid || !this.enderecoForm.valid){
+      CommonUtils.validateAllFields(this.dadosPessoaisForm);
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import {Generos} from '../../../../models/common-models/generos.interface'
 
 @Component({
   selector: 'app-endereco-residencial',
@@ -8,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class EnderecoResidencialComponent implements OnInit {
   formulario!: FormGroup;
+  generos: Generos [] = [];
 
   ngOnInit() {
     this.formulario = new FormGroup({
@@ -18,6 +20,12 @@ export class EnderecoResidencialComponent implements OnInit {
       uf: new FormControl(null, [Validators.required]),
       complementar: new FormControl(null, [Validators.required]),
     })
+  }
+  getGeneros(){
+    this.generos = [
+      {value: 1, descricao: 'Masculino'},
+      {value: 2, descricao: 'Feminino'}
+    ];
   }
 
 }

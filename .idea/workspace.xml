@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="cadastro paciente">
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Reformulação do front-end">
+      <change afterPath="$PROJECT_DIR$/client-web/src/app/common/breadcrumb-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-web/src/app/models/common-models/generos.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-web/src/app/util/common-utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/componentes/breadcrumb/breadcrumb.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/componentes/breadcrumb/breadcrumb.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/models/common/breadcrumb-item.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/shared/material/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/shared/material/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-web/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client-web/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +113,8 @@
       <workItem from="1641340711563" duration="3549000" />
       <workItem from="1641415915693" duration="3337000" />
       <workItem from="1641512276221" duration="1315000" />
-      <workItem from="1641684200450" duration="350000" />
+      <workItem from="1641684200450" duration="991000" />
+      <workItem from="1641855071323" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -167,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641684308550</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="cadastro paciente validações de campos">
+      <created>1641764748998</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641764748998</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +216,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="template basico" />
     <MESSAGE value="cadastro paciente" />
-    <option name="LAST_COMMIT_MESSAGE" value="cadastro paciente" />
+    <MESSAGE value="cadastro paciente validações de campos" />
+    <MESSAGE value="Reformulação do front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformulação do front-end" />
   </component>
 </project>
