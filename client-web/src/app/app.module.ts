@@ -1,15 +1,16 @@
-import { LOCALE_ID, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConsultaCepService } from './services/consulta-cep.service';
+import { DropdownService } from './services/dropdown.service';
+import { MaterialModule } from './shared/material/material.module';
 import { HomeComponent } from './template/home/home.component';
 import { TemplateModule } from './template/template.module';
 import { PacienteModule } from './views/paciente/paciente.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './shared/material/material.module';
-import { DateAdapter, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/core';
-import { MomentDateAdapter } from '@angular/material-moment-adapter';
 
 
 
@@ -44,6 +45,8 @@ export const DateFormat = {
 
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
+    ConsultaCepService,
+    DropdownService
   ],
 
   bootstrap: [AppComponent]
