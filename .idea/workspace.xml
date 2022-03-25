@@ -4,77 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Criação Formularios Endereço">
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="remoção front-end">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Responsavel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/EnderecoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/PacienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/ReponsavelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/common/breadcrumb-item.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/componentes/breadcrumb/breadcrumb.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/componentes/breadcrumb/breadcrumb.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/componentes/breadcrumb/breadcrumb.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/config/ngx-bootstrap.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/models/common-models/cidade.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/models/common-models/estados.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/models/common-models/generos.interface.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/services/consulta-cep.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/services/dropdown.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/shared/material/material.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/shared/shared.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/footer/footer.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/footer/footer.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/footer/footer.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/home/home.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/home/home.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/navbar/navbar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/navbar/navbar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/navbar/navbar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/sidebar/sidebar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/template/template.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/util/common-utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/dados-pessoais/dados-pessoais.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/dados-pessoais/dados-pessoais.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/dados-pessoais/dados-pessoais.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/endereco-residencial/endereco-residencial.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-cadastro/paciente.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/app/views/paciente/paciente.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/assets/dados/cidades.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/assets/dados/estados.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-web/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +26,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -101,11 +53,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -130,17 +86,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../client-web" />
+    <property name="last_opened_file_path" value="$USER_HOME$/BeerzerBar-codigo-fonte" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="CodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -168,6 +127,9 @@
       <workItem from="1641855071323" duration="896000" />
       <workItem from="1641951108361" duration="189000" />
       <workItem from="1642031040564" duration="600000" />
+      <workItem from="1646938819744" duration="1449000" />
+      <workItem from="1648245945616" duration="269000" />
+      <workItem from="1648247604240" duration="3669000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
