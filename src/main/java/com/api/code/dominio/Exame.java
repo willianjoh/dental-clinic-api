@@ -7,25 +7,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Entity
 @Data
 @Getter
 @Setter
 @NoArgsConstructor
-public class Usuario {
-
+public class Exame {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @OneToOne
-    @JoinColumn(name = "id_Pessoa")
-    private Pessoa pessoa;
+    @NotNull
+    @Column
+    private String nome;
 
     @NotNull
     @Column
-    private String senha;
-
+    private String tipo;
 }
