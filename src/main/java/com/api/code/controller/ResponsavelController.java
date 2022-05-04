@@ -6,6 +6,7 @@ import com.api.code.dominio.Responsavel;
 import com.api.code.repository.PacienteRemovidoRepository;
 import com.api.code.repository.PacienteRepository;
 import com.api.code.repository.ReponsavelRepository;
+import com.api.code.service.ResponsavelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,9 @@ public class ResponsavelController {
 
     @Autowired
     ReponsavelRepository reponsavelRepository;
+
+    @Autowired
+    ResponsavelService responsavelService;
 
 
     @GetMapping("list")
@@ -51,6 +55,15 @@ public class ResponsavelController {
         }
 
         return ResponseEntity.notFound().build();
+    }
+
+    @PutMapping("atualizar/{id}")
+    @ResponseBody
+    public Responsavel atualizar(@PathVariable Long id, @RequestBody @Valid Responsavel responsavel) {
+
+        Responsavel responsavelAtualizado = responsavelService.atualizar(id, responsavel);
+
+        return reponsavelRepository.save(responsavelAtualizado);
     }
 
 
