@@ -1,23 +1,20 @@
 package com.api.code.dominio;
 
 import com.sun.istack.NotNull;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
-import javax.transaction.Transactional;
-import java.sql.Date;
+import java.util.Date;
 
 @Entity
-@Data
 @Getter
 @Setter
 @NoArgsConstructor
-public class Responsavel {
+public class PacienteRemovido {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -39,7 +36,7 @@ public class Responsavel {
 
     @NotNull
     @Column
-    private Date dataNascimento;
+    private java.sql.Date dataNascimento;
 
     @NotNull
     @Column
@@ -58,8 +55,23 @@ public class Responsavel {
 
     @OneToOne
     @JoinColumn(name = "id_endereco")
-    @Cascade(CascadeType.ALL)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Endereco endereco;
 
+    @NotNull
+    @Column
+    private Date dataRemosão;
+
+    @Column
+    private Long maiorIdade;
+
+    @Column
+    private Long idResponsavel;
+
+    @Column
+    private Long idDentistaResponsavel;
+
+    @Column
+    private String informacoesAdicionais;
 
 }
