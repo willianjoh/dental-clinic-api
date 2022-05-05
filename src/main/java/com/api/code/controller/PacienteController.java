@@ -32,8 +32,6 @@ public class PacienteController {
     @Autowired
     PacienteService pacienteService;
 
-    PacienteRemovido pacienteRemovido;
-
     @GetMapping("list")
     @ResponseBody
     public List<Paciente> listar() {
@@ -72,5 +70,11 @@ public class PacienteController {
         return pacienteRepository.save(pacienteAtualizado);
     }
 
+    @GetMapping("buscarPacienteCPF")
+    @ResponseBody
+    public Paciente buscarPacienteCpf(@Valid @QueryParam("cpfPaciente") String cpfPaciente) {
+        return pacienteRepository.findPacienteByCpf(cpfPaciente);
 
+    }
 }
+
