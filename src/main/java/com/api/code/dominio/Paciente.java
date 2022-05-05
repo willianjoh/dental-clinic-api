@@ -1,16 +1,15 @@
 package com.api.code.dominio;
 
 import com.sun.istack.NotNull;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Data
 @Getter
 @Setter
 @NoArgsConstructor
@@ -54,20 +53,19 @@ public class Paciente {
     @Column
     private String telefoneFixo;
 
+    @OneToOne
+    @JoinColumn(name = "id_endereco")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    private Endereco endereco;
+
     @Column
     private Long maiorIdade;
 
-    @OneToOne
-    @JoinColumn(name = "id_Responsavel")
-    private Responsavel responsavel;
+    @Column
+    private Long idResponsavel;
 
-    @OneToOne
-    @JoinColumn(name = "id_endereco")
-    private Endereco endereco;
-
-    @OneToOne
-    @JoinColumn(name = "id_dentista")
-    private Usuario dentistaResponsavel;
+    @Column
+    private Long idDentistaResponsavel;
 
     @Column
     private String informacoesAdicionais;
