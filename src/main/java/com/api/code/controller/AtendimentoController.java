@@ -1,7 +1,6 @@
 package com.api.code.controller;
 
 import com.api.code.dominio.Atendimento;
-import com.api.code.dominio.Paciente;
 import com.api.code.repository.AtendimentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,13 +9,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.time.LocalTime;
-import java.util.Date;
 import java.util.List;
 
 @Controller
-@RequestMapping("atendimento")
-public class AtendimentoContrroller {
+@RequestMapping("/api/atendimento")
+public class AtendimentoController {
 
     @Autowired
     AtendimentoRepository atendimentoRepository;

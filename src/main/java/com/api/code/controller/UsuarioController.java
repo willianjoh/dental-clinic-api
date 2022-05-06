@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("usuario")
+@RequestMapping("/api/usuario")
 public class UsuarioController {
 
     @Autowired
@@ -28,38 +28,29 @@ public class UsuarioController {
     @GetMapping("list")
     @ResponseBody
     public List<Usuario> listar() {
-
         return usuarioRepository.findAll();
-
-
     }
 
-    @PostMapping("inclusao")
+    @PostMapping("incluir")
     public ResponseEntity<Usuario> inclusao(@Valid @RequestBody Usuario usuario) {
-
         usuarioRepository.save(usuario);
-
         return new ResponseEntity<>(usuario, HttpStatus.CREATED);
     }
+
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> remosao(@PathVariable Long id) {
+    public ResponseEntity<?> remover(@PathVariable Long id) {
         Optional<Usuario> optional = usuarioRepository.findById(id);
         if (optional.isPresent()) {
             usuarioRepository.deleteById(id);
             return ResponseEntity.ok().build();
         }
-
         return ResponseEntity.notFound().build();
     }
-
-
 
     @PutMapping("{id}")
     @ResponseBody
     public Usuario atualizar(@PathVariable Long id, @RequestBody @Valid Usuario usuario) {
-
         Usuario atualizado = usuarioService.atualizar(id, usuario);
-
         return usuarioRepository.save(atualizado);
     }
 

@@ -21,14 +21,9 @@ public class Usuario {
     private long id;
 
     @NotNull
-    @Column
-    private String nome;
+    @Column(unique = true)
+    private String userName;
 
-    @NotNull
-    @Column
-    private String sobrenome;
-
-    @NotNull
     @Column
     private String email;
 
@@ -36,15 +31,12 @@ public class Usuario {
     @Column
     private String senha;
 
-    @NotNull
     @Column
     private String celular;
 
-    @NotNull
     @Column
     private Date dataNascimento;
 
-    @NotNull
     @Column
     private String cpf;
 }

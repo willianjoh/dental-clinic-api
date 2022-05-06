@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("responsavel")
+@RequestMapping("/api/responsavel")
 public class ResponsavelController {
 
     @Autowired

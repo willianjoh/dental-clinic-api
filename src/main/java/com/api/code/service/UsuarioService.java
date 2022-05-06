@@ -18,8 +18,7 @@ public class UsuarioService {
         usuarioEditado.setEmail(usuario.getEmail());
         usuarioEditado.setCelular(usuario.getCelular());
         usuarioEditado.setDataNascimento(usuario.getDataNascimento());
-        usuarioEditado.setNome(usuario.getNome());
-        usuarioEditado.setSobrenome(usuario.getSobrenome());
+        usuarioEditado.setUserName(usuario.getUserName());
         usuarioEditado.setSenha(usuario.getSenha());
         return usuarioEditado;
     }

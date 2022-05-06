@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping("paciente")
+@RequestMapping("/api/paciente")
 public class PacienteController {
 
     @Autowired
