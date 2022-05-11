@@ -32,7 +32,7 @@ public class UsuarioController {
     }
 
     @PostMapping("incluir")
-    public ResponseEntity<Usuario> inclusao(@Valid @RequestBody Usuario usuario) {
+    public ResponseEntity<Usuario> incluir(@Valid @RequestBody Usuario usuario) {
         usuarioRepository.save(usuario);
         return new ResponseEntity<>(usuario, HttpStatus.CREATED);
     }

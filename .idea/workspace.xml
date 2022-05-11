@@ -4,36 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="conexao Prostgresql e criacao de entidades iniciais">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_boot_spring_security_oauth2_autoconfigure_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_5_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_jwt_1_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades-basicas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entidades-basicas.uml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de login parcial">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoContrroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/ResponsavelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/ResponsavelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/AtendimentoContrroller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +133,7 @@
       <workItem from="1646938819744" duration="1449000" />
       <workItem from="1648245945616" duration="269000" />
       <workItem from="1648247604240" duration="3669000" />
+      <workItem from="1652299479583" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -244,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641951251496</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Autenticação de login parcial">
+      <created>1651799126019</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651799126019</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +270,18 @@
     <MESSAGE value="cadastro paciente validações de campos" />
     <MESSAGE value="Reformulação do front-end" />
     <MESSAGE value="Criação Formularios Endereço" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação Formularios Endereço" />
+    <MESSAGE value="Autenticação de login parcial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autenticação de login parcial" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

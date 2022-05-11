@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.31">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-12400||-9223372036854775808|c|G
-12400||10|c|G
-12400||10|C|G
-12400||10|T|G</Grants>
-      <IntrospectionStateNumber>632</IntrospectionStateNumber>
+      <IntrospectionStateNumber>637</IntrospectionStateNumber>
       <ServerVersion>9.6.24</ServerVersion>
       <StartupTime>1651696990</StartupTime>
       <TimeZones>true ACDT
@@ -55,14 +47,14 @@ false Africa/Blantyre
 false Africa/Brazzaville
 false Africa/Bujumbura
 false Africa/Cairo
-true Africa/Casablanca
+false Africa/Casablanca
 true Africa/Ceuta
 false Africa/Conakry
 false Africa/Dakar
 false Africa/Dar_es_Salaam
 false Africa/Djibouti
 false Africa/Douala
-true Africa/El_Aaiun
+false Africa/El_Aaiun
 false Africa/Freetown
 false Africa/Gaborone
 false Africa/Harare
@@ -809,7 +801,7 @@ true posixrules
 12113||10|C|G
 12113||-9223372036854775808|U|G
 12113||10|U|G</Grants>
-      <IntrospectionStateNumber>633</IntrospectionStateNumber>
+      <IntrospectionStateNumber>638</IntrospectionStateNumber>
       <ObjectId>16393</ObjectId>
       <Relations>sequence|table|16394|16396|1
 sequence|table|16405|16407|1
@@ -3967,7 +3959,7 @@ sequence|table|24653|24655|1
     <schema id="234" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>633</IntrospectionStateNumber>
+      <IntrospectionStateNumber>638</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>340</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4079,7 +4071,7 @@ sequence|table|24653|24655|1
     </table>
     <table id="254" parent="234" name="usuario">
       <ObjectId>16444</ObjectId>
-      <StateNumber>604</StateNumber>
+      <StateNumber>634</StateNumber>
       <OwnerName>postgres</OwnerName>
     </table>
     <column id="255" parent="245" name="id">
@@ -5026,7 +5018,13 @@ sequence|table|24653|24655|1
       <StateNumber>594</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="386" parent="254" name="fkihpr6fsj9vxc6aqg9seaicql6">
+    <column id="386" parent="254" name="user_name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>10</Position>
+      <StateNumber>634</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <foreign-key id="387" parent="254" name="fkihpr6fsj9vxc6aqg9seaicql6">
       <ColNames>id_pessoa</ColNames>
       <ObjectId>16549</ObjectId>
       <RefColNames>id</RefColNames>
@@ -5037,7 +5035,7 @@ sequence|table|24653|24655|1
       <RefTableName>pessoa</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="387" parent="254" name="usuario_pkey">
+    <index id="388" parent="254" name="usuario_pkey">
       <ClassIds>3124</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -5048,13 +5046,29 @@ sequence|table|24653|24655|1
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="388" parent="254" name="usuario_pkey">
+    <index id="389" parent="254" name="uk_pimirdqbf828ejsgnxmc3kfix">
+      <ClassIds>3126</ClassIds>
+      <ColNames>user_name</ColNames>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ObjectId>24669</ObjectId>
+      <StateNumber>635</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="390" parent="254" name="usuario_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16452</ObjectId>
       <Primary>1</Primary>
       <StateNumber>567</StateNumber>
       <UnderlyingIndexId>16451</UnderlyingIndexId>
+    </key>
+    <key id="391" parent="254" name="uk_pimirdqbf828ejsgnxmc3kfix">
+      <ColNames>user_name</ColNames>
+      <ObjectId>24670</ObjectId>
+      <StateNumber>635</StateNumber>
+      <UnderlyingIndexId>24669</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
