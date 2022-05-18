@@ -1,6 +1,7 @@
 package com.api.code.service;
 
 import com.api.code.dominio.Usuario;
+import com.api.code.exception.UsuarioCadastradoException;
 import com.api.code.repository.UsuarioRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -25,6 +26,14 @@ public class UsuarioService implements UserDetailsService {
         usuarioEditado.setUserName(usuario.getUserName());
         usuarioEditado.setSenha(usuario.getSenha());
         return usuarioEditado;
+    }
+
+    public Usuario salvar(Usuario usuario) {
+        boolean exists = usuarioRepository.existsByUserName(usuario.getUserName());
+        if(exists){
+            throw new UsuarioCadastradoException();
+        }
+        return usuarioRepository.save(usuario);
     }
 
     @Override

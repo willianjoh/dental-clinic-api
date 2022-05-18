@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de login parcial">
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de login finalizada">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/exception/UsuarioCadastradoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_05_2022_20_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_05_2022_20_05__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/AtendimentoContrroller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Usuario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" afterDir="false" />
     </list>
@@ -98,6 +95,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/api/code" />
     <property name="last_opened_file_path" value="$USER_HOME$/BeerzerBar-codigo-fonte" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -134,6 +132,7 @@
       <workItem from="1648245945616" duration="269000" />
       <workItem from="1648247604240" duration="3669000" />
       <workItem from="1652299479583" duration="3062000" />
+      <workItem from="1652825135066" duration="7404000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -278,8 +277,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
+          <line>38</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

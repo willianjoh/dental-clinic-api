@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.sql.Date;
 
 @Entity
@@ -22,6 +23,7 @@ public class Usuario {
 
     @NotNull
     @Column(unique = true)
+    @NotEmpty(message = "Campo Obrigatório")
     private String userName;
 
     @Column
@@ -29,6 +31,7 @@ public class Usuario {
 
     @NotNull
     @Column
+    @NotEmpty(message = "Campo Obrigatório")
     private String senha;
 
     @Column
