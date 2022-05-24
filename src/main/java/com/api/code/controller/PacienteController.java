@@ -40,8 +40,8 @@ public class PacienteController {
 
     }
 
-    @PostMapping("inclusao")
-    public ResponseEntity<Paciente> inclusao(@Valid @RequestBody Paciente paciente) {
+    @PostMapping("incluir")
+    public ResponseEntity<Paciente> incluir(@Valid @RequestBody Paciente paciente) {
 
         pacienteRepository.save(paciente);
 

@@ -25,7 +25,6 @@ public class PacienteService {
         pacienteAtualizado.setGenero(paciente.getGenero());
         pacienteAtualizado.setProfissao(paciente.getProfissao());
         pacienteAtualizado.setTelefoneFixo(paciente.getTelefoneFixo());
-        pacienteAtualizado.setMaiorIdade(paciente.getMaiorIdade());
         pacienteAtualizado.setIdResponsavel(paciente.getIdResponsavel());
         pacienteAtualizado.setIdDentistaResponsavel(paciente.getIdDentistaResponsavel());
         pacienteAtualizado.setInformacoesAdicionais(paciente.getInformacoesAdicionais());
@@ -47,8 +46,7 @@ public class PacienteService {
         pacienteRemovido.setGenero(paciente.getGenero());
         pacienteRemovido.setProfissao(paciente.getProfissao());
         pacienteRemovido.setTelefoneFixo(paciente.getTelefoneFixo());
-        pacienteRemovido.setMaiorIdade(paciente.getMaiorIdade());
-        pacienteRemovido.setIdResponsavel(paciente.getIdResponsavel());
+        pacienteRemovido.setIdResponsavel(paciente.getIdResponsavel().getId());
         pacienteRemovido.setIdDentistaResponsavel(paciente.getIdDentistaResponsavel());
         pacienteRemovido.setInformacoesAdicionais(paciente.getInformacoesAdicionais());
         pacienteRemovido.setCpf(paciente.getCpf());

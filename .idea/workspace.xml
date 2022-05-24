@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de login finalizada">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/exception/UsuarioCadastradoException.java" afterDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de cadastro e login">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_05_2022_20_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_05_2022_20_05__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/repository/UsuarioRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +135,9 @@
       <workItem from="1648245945616" duration="269000" />
       <workItem from="1648247604240" duration="3669000" />
       <workItem from="1652299479583" duration="3062000" />
-      <workItem from="1652825135066" duration="7404000" />
+      <workItem from="1652825135066" duration="7801000" />
+      <workItem from="1652906392374" duration="1413000" />
+      <workItem from="1653349079828" duration="4861000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -239,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651799126019</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Autenticação de cadastro e login">
+      <created>1652833701430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652833701431</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +282,8 @@
     <MESSAGE value="Reformulação do front-end" />
     <MESSAGE value="Criação Formularios Endereço" />
     <MESSAGE value="Autenticação de login parcial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autenticação de login parcial" />
+    <MESSAGE value="Autenticação de cadastro e login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autenticação de cadastro e login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -279,6 +292,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java</url>
           <line>38</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
