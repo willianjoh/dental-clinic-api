@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.endereco</OriginalElement>
+  <nodes>
+    <node x="399.5338983050847" y="261.0">76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.usuario</node>
+    <node x="192.15728410008066" y="0.0">76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.endereco</node>
+    <node x="-95.53728813559326" y="261.0">76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.responsavel</node>
+    <node x="114.29774011299429" y="578.1254237288138">76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.paciente</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.paciente" target="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.usuario" relationship="REFERENCES">
+      <point x="76.0" y="-181.5" />
+      <point x="304.2977401129943" y="562.0" />
+      <point x="481.5338983050847" y="562.0" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.responsavel" target="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.endereco" relationship="REFERENCES">
+      <point x="0.0" y="-137.5" />
+      <point x="-0.03728813559325772" y="235.0" />
+      <point x="281.6572841000807" y="235.0" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.paciente" target="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.endereco" relationship="REFERENCES">
+      <point x="0.0" y="-181.5" />
+      <point x="228.2977401129943" y="235.0" />
+      <point x="281.6572841000807" y="235.0" />
+      <point x="0.0" y="104.5" />
+    </edge>
+    <edge source="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.paciente" target="76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.responsavel" relationship="REFERENCES">
+      <point x="-76.0" y="-181.5" />
+      <point x="152.2977401129943" y="562.0" />
+      <point x="-0.03728813559325772" y="562.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9114315139031925" showDependencies="false" x="191.5" y="475.5" />
+  <SelectedNodes>
+    <node>76249a38-0651-4f6d-8d98-b6f5f280885e.TABLE:dental-clinic.public.usuario</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="remoção front-end">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Responsavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/EnderecoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/PacienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/ReponsavelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/UsuarioRepository.java" afterDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de cadastro e login">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/CodeApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,6 +98,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/api/code" />
     <property name="last_opened_file_path" value="$USER_HOME$/BeerzerBar-codigo-fonte" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -130,6 +134,10 @@
       <workItem from="1646938819744" duration="1449000" />
       <workItem from="1648245945616" duration="269000" />
       <workItem from="1648247604240" duration="3669000" />
+      <workItem from="1652299479583" duration="3062000" />
+      <workItem from="1652825135066" duration="7801000" />
+      <workItem from="1652906392374" duration="1413000" />
+      <workItem from="1653349079828" duration="4861000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -229,11 +237,29 @@
       <option name="project" value="LOCAL" />
       <updated>1641951251496</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Autenticação de login parcial">
+      <created>1651799126019</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651799126019</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Autenticação de cadastro e login">
+      <created>1652833701430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652833701431</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -255,6 +281,24 @@
     <MESSAGE value="cadastro paciente validações de campos" />
     <MESSAGE value="Reformulação do front-end" />
     <MESSAGE value="Criação Formularios Endereço" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação Formularios Endereço" />
+    <MESSAGE value="Autenticação de login parcial" />
+    <MESSAGE value="Autenticação de cadastro e login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autenticação de cadastro e login" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

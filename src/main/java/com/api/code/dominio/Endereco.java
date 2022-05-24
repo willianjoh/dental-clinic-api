@@ -35,6 +35,7 @@ public class Endereco {
     @Column
     private String bairro;
 
+    @Column
     private String complemento;
 
     @NotNull

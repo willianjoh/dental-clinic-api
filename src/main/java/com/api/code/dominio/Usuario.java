@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.sql.Date;
 
 @Entity
@@ -21,30 +22,24 @@ public class Usuario {
     private long id;
 
     @NotNull
-    @Column
-    private String nome;
+    @Column(unique = true)
+    @NotEmpty(message = "Campo Obrigatório")
+    private String userName;
 
-    @NotNull
-    @Column
-    private String sobrenome;
-
-    @NotNull
     @Column
     private String email;
 
     @NotNull
     @Column
+    @NotEmpty(message = "Campo Obrigatório")
     private String senha;
 
-    @NotNull
     @Column
     private String celular;
 
-    @NotNull
     @Column
     private Date dataNascimento;
 
-    @NotNull
     @Column
     private String cpf;
 }
