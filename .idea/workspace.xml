@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Resolvendo problema com salvar Paciente!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" afterDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Resolvendo problema com excluir Paciente!">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,7 @@
       <workItem from="1652825135066" duration="7801000" />
       <workItem from="1652906392374" duration="1413000" />
       <workItem from="1653349079828" duration="4861000" />
-      <workItem from="1653480752641" duration="1242000" />
+      <workItem from="1653480752641" duration="1444000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653446863082</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Resolvendo problema com excluir Paciente!">
+      <created>1653482021209</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1653482021209</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +266,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Willian/master" />
+                        <option value="origin/Conexao_entre_back_front" />
                       </list>
                     </value>
                   </entry>
@@ -284,7 +291,8 @@
     <MESSAGE value="Autenticação de login parcial" />
     <MESSAGE value="Autenticação de cadastro e login" />
     <MESSAGE value="Resolvendo problema com salvar Paciente!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolvendo problema com salvar Paciente!" />
+    <MESSAGE value="Resolvendo problema com excluir Paciente!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolvendo problema com excluir Paciente!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
