@@ -52,10 +52,9 @@ public class PacienteController {
     public ResponseEntity<Paciente> incluir(@Valid @RequestBody NovoPacienteDTO novoPacienteDTO) {
         Responsavel responsavel = new Responsavel();
 
-        if(!novoPacienteDTO.isMaiorIdade()){
+        if (!novoPacienteDTO.isMaiorIdade()) {
 
             responsavel = responsavelRepository.save(novoPacienteDTO.getNovoResponsavelDTO().toResponsavel());
-
         }
 
         Paciente paciente = pacienteRepository.save(novoPacienteDTO.toPaciente(responsavel.getId()));
@@ -67,6 +66,10 @@ public class PacienteController {
     public ResponseEntity<Paciente> remosao(@QueryParam("id") Long id) {
         Optional<Paciente> optional = pacienteRepository.findById(id);
         if (optional.isPresent()) {
+            PacienteRemovido pacienteRemover = pacienteService.preenchendoRemovido(id);
+            if (pacienteRemover.getIdResponsavel() != null) {
+                responsavelRepository.deleteById(pacienteRemover.getIdResponsavel());
+            }
             pacienteRemovidoRepository.save(pacienteService.preenchendoRemovido(id));
             pacienteRepository.deleteById(id);
             return ResponseEntity.ok().build();
