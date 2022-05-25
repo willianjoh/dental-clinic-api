@@ -1,9 +1,7 @@
 package com.api.code.service;
 
 import com.api.code.dominio.Responsavel;
-import com.api.code.dominio.Usuario;
-import com.api.code.repository.ReponsavelRepository;
-import com.api.code.repository.UsuarioRepository;
+import com.api.code.repository.ResponsavelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +9,11 @@ import org.springframework.stereotype.Service;
 public class ResponsavelService {
 
     @Autowired
-    ReponsavelRepository reponsavelRepository;
+    ResponsavelRepository responsavelRepository;
 
     public Responsavel atualizar(Long id, Responsavel responsavel) {
 
-        Responsavel responsavelAtualizado = reponsavelRepository.getById(id);
+        Responsavel responsavelAtualizado = responsavelRepository.getById(id);
         responsavelAtualizado.setNomeCompleto(responsavel.getNomeCompleto());
         responsavelAtualizado.setEmail(responsavel.getEmail());
         responsavelAtualizado.setRg(responsavel.getRg());
