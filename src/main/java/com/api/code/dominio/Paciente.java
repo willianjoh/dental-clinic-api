@@ -61,8 +61,8 @@ public class Paciente {
     @Column
     private Long maiorIdade;
 
-    @OneToOne
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @OneToOne()
+    @Cascade({org.hibernate.annotations.CascadeType.ALL})
     private Responsavel idResponsavel;
 
     @Column

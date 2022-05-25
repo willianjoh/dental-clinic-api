@@ -30,6 +30,14 @@ public class Atendimento {
 
     @Column
     @NotNull
+    private Long idPaciente;
+
+    @Column
+    @NotNull
+    private String nomePaciente;
+
+    @Column
+    @NotNull
     private Long idDentista;
 
     @Column
