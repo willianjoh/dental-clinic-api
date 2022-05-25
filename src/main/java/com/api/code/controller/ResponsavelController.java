@@ -1,11 +1,7 @@
 package com.api.code.controller;
 
-import com.api.code.dominio.Paciente;
-import com.api.code.dominio.PacienteRemovido;
 import com.api.code.dominio.Responsavel;
-import com.api.code.repository.PacienteRemovidoRepository;
-import com.api.code.repository.PacienteRepository;
-import com.api.code.repository.ReponsavelRepository;
+import com.api.code.repository.ResponsavelRepository;
 import com.api.code.service.ResponsavelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,7 +18,7 @@ import java.util.Optional;
 public class ResponsavelController {
 
     @Autowired
-    ReponsavelRepository reponsavelRepository;
+    ResponsavelRepository reponsavelRepository;
 
     @Autowired
     ResponsavelService responsavelService;

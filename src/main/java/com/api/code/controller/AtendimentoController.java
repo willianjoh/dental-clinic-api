@@ -18,13 +18,10 @@ public class AtendimentoController {
     @Autowired
     AtendimentoRepository atendimentoRepository;
 
-    Atendimento atendimento;
-
-    @PostMapping("inclusao")
-    public ResponseEntity<Atendimento> inclusao(@Valid @RequestBody Atendimento atendimento) {
+    @PostMapping("incluir")
+    public ResponseEntity<Atendimento> incluir(@Valid @RequestBody Atendimento atendimento) {
 
         atendimentoRepository.save(atendimento);
-
         return new ResponseEntity<>(atendimento, HttpStatus.CREATED);
     }
 
