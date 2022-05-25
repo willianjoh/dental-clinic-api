@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Resolvendo problema com excluir Paciente!">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Voltando banco!">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/ResourceServerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <workItem from="1652825135066" duration="7801000" />
       <workItem from="1652906392374" duration="1413000" />
       <workItem from="1653349079828" duration="4861000" />
-      <workItem from="1653480752641" duration="1444000" />
+      <workItem from="1653480752641" duration="1582000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -245,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653482021209</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Voltando banco!">
+      <created>1653482221502</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1653482221502</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +298,8 @@
     <MESSAGE value="Autenticação de cadastro e login" />
     <MESSAGE value="Resolvendo problema com salvar Paciente!" />
     <MESSAGE value="Resolvendo problema com excluir Paciente!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolvendo problema com excluir Paciente!" />
+    <MESSAGE value="Voltando banco!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Voltando banco!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
