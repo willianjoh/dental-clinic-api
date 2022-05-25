@@ -9,6 +9,6 @@ import java.util.Optional;
 
 
 @Repository
-public interface ReponsavelRepository extends JpaRepository<Responsavel, Long> {
+public interface ResponsavelRepository extends JpaRepository<Responsavel, Long> {
 
 }

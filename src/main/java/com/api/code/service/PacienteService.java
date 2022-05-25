@@ -46,7 +46,7 @@ public class PacienteService {
         pacienteRemovido.setGenero(paciente.getGenero());
         pacienteRemovido.setProfissao(paciente.getProfissao());
         pacienteRemovido.setTelefoneFixo(paciente.getTelefoneFixo());
-        pacienteRemovido.setIdResponsavel(paciente.getIdResponsavel().getId());
+        pacienteRemovido.setIdResponsavel(paciente.getIdResponsavel());
         pacienteRemovido.setIdDentistaResponsavel(paciente.getIdDentistaResponsavel());
         pacienteRemovido.setInformacoesAdicionais(paciente.getInformacoesAdicionais());
         pacienteRemovido.setCpf(paciente.getCpf());

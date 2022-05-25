@@ -13,6 +13,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
        http.authorizeRequests()
                .antMatchers("/api/usuario").permitAll()
-               .antMatchers("/api/atendimento/**", "/api/paciente/**", "/api/responsavel/**").authenticated();
+               .antMatchers("/api/atendimento/**", "/api/paciente/**","/api/responsavel/**").authenticated();
     }
 }
