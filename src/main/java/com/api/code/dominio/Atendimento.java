@@ -30,6 +30,10 @@ public class Atendimento {
 
     @Column
     @NotNull
+    private String nomePaciente;
+
+    @Column
+    @NotNull
     private Long idDentista;
 
     @Column
@@ -42,5 +46,9 @@ public class Atendimento {
     @Column
     @NotNull
     private LocalTime horario;
+
+    @Column
+    @NotNull
+    private String local;
 
 }
